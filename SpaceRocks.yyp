@@ -21,7 +21,6 @@
     {"id":{"name":"obj_neutral","path":"objects/obj_neutral/obj_neutral.yy",},"order":1,},
     {"id":{"name":"spr_enemy_ship","path":"sprites/spr_enemy_ship/spr_enemy_ship.yy",},"order":0,},
     {"id":{"name":"spr_asteroid_big","path":"sprites/spr_asteroid_big/spr_asteroid_big.yy",},"order":0,},
-    {"id":{"name":"Sprite7","path":"sprites/Sprite7/Sprite7.yy",},"order":14,},
     {"id":{"name":"spr_debris","path":"sprites/spr_debris/spr_debris.yy",},"order":5,},
     {"id":{"name":"snd_crash_ship","path":"sounds/snd_crash_ship/snd_crash_ship.yy",},"order":3,},
     {"id":{"name":"obj_faction","path":"objects/obj_faction/obj_faction.yy",},"order":9,},
