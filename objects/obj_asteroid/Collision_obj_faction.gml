@@ -2,6 +2,9 @@
 // You can write your code in this editor
 if (other.faction == faction) exit;
 
+/// Do not damage the enemies (for the moment?)
+if (other.faction == factions.enemy) exit;
+
 // Takes damage
 event_perform(ev_other, ev_user1);
 

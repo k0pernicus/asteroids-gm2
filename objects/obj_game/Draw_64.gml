@@ -4,6 +4,7 @@ switch (room) {
 	draw_text(20, 20, "SCORE: " + string(score));
 	draw_text(20, 40, "LIVES: " + string(lives));
 	if (debug_mode) draw_text(20, 60, "ASTRO: " + string(global.asteroids));
+	if (debug_mode) draw_text(20, 70, "ENEMI: " + string(global.enemies));
 	break;
 	
  case rm_start:

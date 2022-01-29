@@ -1,6 +1,6 @@
 /// @description Damage
 score += 10;
-if (global.allow_playing_sound) {
+if (allow_playing_sound) {
 	audio_play_sound(snd_crash_rock, 1, false);
 }
 

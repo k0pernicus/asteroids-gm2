@@ -18,9 +18,14 @@ enum difficulties { // TODO: implement this
 
 global.current_difficulty = difficulties.medium;
 global.max_score = 1000;
+// Asteroids
 global.asteroids = 0;
 global.start_asteroids = 40;
+// Enemies
+global.enemies = 0;
+global.start_enemies = 8;
+// Prevent double instance of game object running at the same time
 global.playing = false; // Prevent the "Room Start" to be called twice
-global.allow_playing_sound = false; // Play sound or not
+#macro allow_playing_sound false // Play sound or not
 score = 0;
 lives = 3;

@@ -1,6 +1,6 @@
 ///@description Spawn a Bullet object
 function spawn_bullet(creator, direction, speed, faction, faction_color) {
-	if (global.allow_playing_sound) {
+	if (allow_playing_sound) {
 		audio_play_sound(snd_laser, 1, false);
 	}
 	

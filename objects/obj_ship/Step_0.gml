@@ -1,10 +1,6 @@
 /// @description User stepper
 
-if (invicible) {
-	sprite_index = spr_ship_invicible;
-} else {
-	sprite_index = spr_ship;
-}
+image_index = !invicible ? 0 : 1;
 
 if (keyboard_check(vk_left)) {
 	image_angle = image_angle + 3.5;
