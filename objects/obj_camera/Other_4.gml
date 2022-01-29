@@ -32,4 +32,4 @@ surface_resize(application_surface, displayWidth, displayHeight);
 // Do not resize / scale again the GUI
 display_set_gui_size(global.cameraWidth, global.cameraHeight);
 
-alarm[0] = 1; // move it to center window after 1 second
+alarm[0] = 1; // move it to center window  immediately
