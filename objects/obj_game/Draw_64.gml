@@ -13,10 +13,11 @@ switch (room) {
 	var c = c_yellow;
 	draw_text_transformed_color(room_width / 2, 100, "SPACE ROCKS", 2, 2, 0, c, c, c, c, 1);
 	draw_text(room_width / 2, 200,
-	@"Score 1,000 points to win!
+	@"Score " + string(global.max_score) + @" points to win!
 	
-	UP: move
-	LEFT/RIGHT: change direction
+	UP or DOWN: move
+	LEFT or RIGHT: change direction
+	SHIFT + (LEFT or RIGHT): lateral move
 	SPACE: shoot
 	Q: quit game
 	
