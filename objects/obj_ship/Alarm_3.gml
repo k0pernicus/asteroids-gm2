@@ -1,4 +1,2 @@
 /// @description Remove invicibility if enabled
-if (self.invicible) {
-	self.invicible = false;
-}
+if (self.restart_bonus) self.restart_bonus = false;

@@ -28,5 +28,5 @@ if (keyboard_check_pressed(vk_enter)) {
 }
 
 if (room != rm_game && keyboard_check_pressed(ord("Q"))) {
-	game_end();	
+	game_end();
 }

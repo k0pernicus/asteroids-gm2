@@ -16,14 +16,17 @@ enum difficulties { // TODO: implement this
 	too_hard_for_you,
 }
 
-global.current_difficulty = difficulties.medium;
+global.current_difficulty = difficulties.medium; // TODO: Uses the game difficulty everywhere
 global.max_score = 1000;
 // Asteroids
 global.asteroids = 0;
 global.start_asteroids = 40;
 // Enemies
 global.enemies = 0;
-global.start_enemies = 8;
+global.start_patrols = 5; // Do not allow more, as enemies AI is not stupid at all...
+global.start_hunters = 8; // Do not allow more, as enemies AI is not stupid at all...
+// Bonus restart
+global.max_under_shield_ticks = 5;
 // Prevent double instance of game object running at the same time
 global.playing = false; // Prevent the "Room Start" to be called twice
 #macro allow_playing_sound false // Play sound or not

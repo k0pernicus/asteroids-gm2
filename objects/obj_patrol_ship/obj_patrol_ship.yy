@@ -1,7 +1,7 @@
 {
   "spriteId": {
-    "name": "spr_enemy_ship",
-    "path": "sprites/spr_enemy_ship/spr_enemy_ship.yy",
+    "name": "spr_patrol_ship",
+    "path": "sprites/spr_patrol_ship/spr_patrol_ship.yy",
   },
   "solid": false,
   "visible": true,
@@ -26,8 +26,6 @@
   "eventList": [
     {"isDnD":false,"eventNum":0,"eventType":1,"collisionObjectId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
     {"isDnD":false,"eventNum":0,"eventType":0,"collisionObjectId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
-    {"isDnD":false,"eventNum":11,"eventType":7,"collisionObjectId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
-    {"isDnD":false,"eventNum":0,"eventType":7,"collisionObjectId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
     {"isDnD":false,"eventNum":0,"eventType":3,"collisionObjectId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
   ],
   "properties": [],
@@ -37,7 +35,7 @@
     "path": "folders/Objects/enemy.yy",
   },
   "resourceVersion": "1.0",
-  "name": "obj_enemy_ship",
+  "name": "obj_patrol_ship",
   "tags": [],
   "resourceType": "GMObject",
 }

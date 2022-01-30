@@ -4,7 +4,8 @@ if (room == rm_start) {
 	}
 } else if (room == rm_game && !global.playing) {
 	spawn_off_camera(obj_asteroid, global.start_asteroids);
-	spawn_off_camera(obj_enemy_ship, global.start_enemies);
+	spawn_off_camera(obj_patrol_ship, global.start_patrols);
+	spawn_off_camera(obj_hunter_ship, global.start_hunters);
 	if (audio_is_playing(msc_game)) {
 		audio_stop_sound(msc_game);
 	}

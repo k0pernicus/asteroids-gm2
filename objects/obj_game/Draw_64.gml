@@ -3,8 +3,11 @@ switch (room) {
 	if (debug_mode) show_debug_message("game screen");
 	draw_text(20, 20, "SCORE: " + string(score));
 	draw_text(20, 40, "LIVES: " + string(lives));
-	if (debug_mode) draw_text(20, 60, "ASTRO: " + string(global.asteroids));
-	if (debug_mode) draw_text(20, 70, "ENEMI: " + string(global.enemies));
+	with (obj_ally) {
+		draw_text(20, 60, "SHIELD: " + string(under_shield_gauge));	
+	}
+	if (debug_mode) draw_text(20, 80, "ASTRO: " + string(global.asteroids));
+	if (debug_mode) draw_text(20, 100, "ENEMI: " + string(global.enemies));
 	break;
 	
  case rm_start:
@@ -19,9 +22,10 @@ switch (room) {
 	LEFT or RIGHT: change direction
 	SHIFT + (LEFT or RIGHT): lateral move
 	SPACE: shoot
-	Q: quit game
+	CTRL: use the shield
+	Q (in menu): quit game
 	
-	>> PRESS ENTER TO START
+	PRESS >> ENTER << TO START
 	");
 	draw_set_halign(fa_left);
 	break;
