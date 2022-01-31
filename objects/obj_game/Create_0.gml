@@ -9,26 +9,41 @@ enum factions {
 
 /// @description Difficulties allows to trick settings in order to make
 /// the player more angry or less angry...
-enum difficulties { // TODO: implement this
+enum difficulties { // TODO: Let the player choose
 	easy,
 	medium, // The "normal" difficulty
 	hard,
-	too_hard_for_you,
 }
 
-global.current_difficulty = difficulties.medium; // TODO: Uses the game difficulty everywhere
-global.max_score = 1000;
+global.current_difficulty = difficulties.easy; // TODO: Uses the game difficulty everywhere
+global.max_score = global.current_difficulty == difficulties.easy ? 500 : 
+				   (global.current_difficulty == difficulties.medium ? 1000 : 
+				    10000);
 // Asteroids
 global.asteroids = 0;
-global.start_asteroids = 40;
+global.start_asteroids = global.current_difficulty == difficulties.easy ? 20 :
+						 (global.current_difficulty == difficulties.medium ? 40:
+						  60);
 // Enemies
 global.enemies = 0;
-global.start_patrols = 5; // Do not allow more, as enemies AI is not stupid at all...
-global.start_hunters = 8; // Do not allow more, as enemies AI is not stupid at all...
+global.start_patrols = global.current_difficulty == difficulties.easy ? 3 :
+					   (global.current_difficulty == difficulties.medium ? 5 :
+					    8);
+global.start_hunters = global.current_difficulty == difficulties.easy ? 4 :
+					   (global.current_difficulty == difficulties.medium ? 8 :
+					    12); // Do not allow more, as enemies AI is not stupid at all...
 // Bonus restart
-global.max_under_shield_ticks = 5;
+global.max_under_shield_ticks = global.current_difficulty == difficulties.easy ? 8 :
+								(global.current_difficulty == difficulties.medium ? 5 :
+								 2);
+
+global.start_patrols = 0;
+global.start_hunters = 0;
+
 // Prevent double instance of game object running at the same time
 global.playing = false; // Prevent the "Room Start" to be called twice
 #macro allow_playing_sound false // Play sound or not
 score = 0;
-lives = 3;
+lives = global.current_difficulty == difficulties.easy ? 5 :
+		(global.current_difficulty == difficulties.medium ? 3 :
+		 1);
