@@ -77,7 +77,7 @@ switch (room) {
 	draw_set_halign(fa_center);
 	var c = c_lime;
 	draw_text_transformed_color(room_width / 2, 100, "YOU WON!", 2, 2, 0, c, c, c, c, 1);
-	draw_text(room_width / 2, 200, "PRESS ENTER TO RESTART / Q TO QUIT");
+	draw_text(room_width / 2, 200, "PRESS >> ENTER << TO RESTART / >> Q << TO QUIT");
 	draw_set_halign(fa_left);
 	break;
 	
@@ -87,7 +87,7 @@ switch (room) {
 	var c = c_red;
 	draw_text_transformed_color(room_width / 2, 100, "GAME OVER!", 2, 2, 0, c, c, c, c, 1);
 	draw_text(room_width / 2, 250, "FINAL SCORE: " + string(score));
-	draw_text(room_width / 2, 300, "PRESS ENTER TO RESTART / Q TO QUIT");
+	draw_text(room_width / 2, 300, "PRESS >> ENTER << TO RESTART / >> Q << TO QUIT");
 	draw_set_halign(fa_left);
 	break;
 }

@@ -1,4 +1,3 @@
-/// @description Insert description here
-// You can write your code in this editor
+/// @description Defines the overall global value for all the game
 
 global.current_difficulty = undefined;

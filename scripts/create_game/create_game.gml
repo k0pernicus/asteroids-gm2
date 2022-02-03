@@ -1,5 +1,11 @@
-function set_game_instance() {
+function reset_game_instance() {
+	lives = 0
+	score = 0
+	global.enemies = 0
+	global.asteroids = 0
+}
 
+function set_game_instance() {
 	if (! variable_global_exists("current_difficulty")) exit;
 
 	global.max_score = global.current_difficulty == difficulties.easy ? 500 : 
