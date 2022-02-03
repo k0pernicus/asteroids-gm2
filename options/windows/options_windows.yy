@@ -1,9 +1,9 @@
 {
-  "option_windows_display_name": "SpaceRocks",
+  "option_windows_display_name": "Astrofuckoid",
   "option_windows_executable_name": "${project_name}.exe",
   "option_windows_version": "1.0.0.0",
-  "option_windows_company_info": "YoYo Games Ltd",
-  "option_windows_product_info": "SpaceRocks",
+  "option_windows_company_info": "Team Glitchees",
+  "option_windows_product_info": "Astrofuckoid",
   "option_windows_copyright_info": "Carette Antonin",
   "option_windows_description_info": "A Team Glitchees game",
   "option_windows_display_cursor": true,
