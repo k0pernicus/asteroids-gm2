@@ -4,7 +4,7 @@ global.cameraX = 0;
 global.cameraY = 0;
 target = obj_ship;
 
-global.cameraWidth = 500; // Do not forget to update the rm_start width if this value changes
+global.cameraWidth = 700; // Do not forget to update the rm_start width if this value changes
 global.cameraHeight = 500; // Do not forget to update the rm_start height if this value changes
 
 view_enabled = true;

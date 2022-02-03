@@ -10,4 +10,4 @@ speed = 1.5;
 originalSpeed = speed; // Save the original speed of the enemy
 direction = irandom_range(0, 359);
 image_angle = direction;
-image_blend = c_purple;
+image_blend = c_fuchsia;
