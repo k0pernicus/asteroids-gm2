@@ -1,5 +1,14 @@
 /// @description User action
 
+/// Make it blink if paralized
+if (is_paralized && image_blend == color) {
+	image_blend = c_red;
+} else {
+	image_blend = color;
+}
+
+if (is_paralized) exit;
+
 // This allows the Player to use his own shield
 // The shield will protect him from asteroids or enemies,
 // **but** the shield is a limited resource.
@@ -44,3 +53,5 @@ if (keyboard_check(vk_shift)) {
 // the ship is under a shield
 if (!attempt_under_shield && keyboard_check_pressed(vk_space)) 
 	spawn_bullet(id, image_angle, bullet_speed, faction, color);
+	
+if (speed > maximum_speed) speed = maximum_speed;

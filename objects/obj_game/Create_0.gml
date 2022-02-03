@@ -12,7 +12,7 @@ enum factions {
 enum difficulties { // TODO: Let the player choose
 	easy,
 	medium, // The "normal" difficulty
-	hard,
+	insane,
 }
 
 global.current_difficulty = difficulties.easy; // TODO: Uses the game difficulty everywhere
@@ -31,14 +31,14 @@ global.start_patrols = global.current_difficulty == difficulties.easy ? 3 :
 					    8);
 global.start_hunters = global.current_difficulty == difficulties.easy ? 4 :
 					   (global.current_difficulty == difficulties.medium ? 8 :
+					    12); // Do not allow more, as enemies AI is not stupid at all...					
+global.start_paralizers = global.current_difficulty == difficulties.easy ? 5 :
+					   (global.current_difficulty == difficulties.medium ? 8 :
 					    12); // Do not allow more, as enemies AI is not stupid at all...
 // Bonus restart
 global.max_under_shield_ticks = global.current_difficulty == difficulties.easy ? 8 :
 								(global.current_difficulty == difficulties.medium ? 5 :
 								 2);
-
-global.start_patrols = 0;
-global.start_hunters = 0;
 
 // Prevent double instance of game object running at the same time
 global.playing = false; // Prevent the "Room Start" to be called twice

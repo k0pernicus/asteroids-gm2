@@ -2,7 +2,6 @@
 event_inherited();
 
 HP = irandom_range(0, 3); // Because we have 4 frames in our object
-image_index = HP; // The index takes the number of HP...
 color = c_green;
 image_blend = color;
 

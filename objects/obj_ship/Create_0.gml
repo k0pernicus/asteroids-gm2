@@ -7,4 +7,6 @@ under_shield = false;
 under_shield_gauge = 0;
 restart_bonus = false;
 bullet_speed = 6;
+is_paralized = false;
+maximum_speed = 4;
 image_blend = color;
