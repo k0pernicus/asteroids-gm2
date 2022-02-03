@@ -8,7 +8,7 @@ The code is not great... but, hey, this is my first attempt :)
 
 ## How to play
 
-Download Game Maker Studio 2, open the projet, and launch "Play".
+Download Game Maker Studio 2, open the projet, and click on "Play".
 
 ## Will be there any build in the future?
 
