@@ -55,3 +55,5 @@ if (!attempt_under_shield && keyboard_check_pressed(vk_space))
 	spawn_bullet(id, image_angle, bullet_speed, faction, color);
 	
 if (speed > maximum_speed) speed = maximum_speed;
+
+move_wrap(true, true, sprite_width / 2);

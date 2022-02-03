@@ -8,6 +8,7 @@
     {"id":{"name":"spawn_bullet","path":"scripts/spawn_bullet/spawn_bullet.yy",},"order":1,},
     {"id":{"name":"obj_hunter_ship","path":"objects/obj_hunter_ship/obj_hunter_ship.yy",},"order":2,},
     {"id":{"name":"obj_bullet","path":"objects/obj_bullet/obj_bullet.yy",},"order":2,},
+    {"id":{"name":"rm_options","path":"rooms/rm_options/rm_options.yy",},"order":4,},
     {"id":{"name":"obj_debris","path":"objects/obj_debris/obj_debris.yy",},"order":3,},
     {"id":{"name":"rm_gameover","path":"rooms/rm_gameover/rm_gameover.yy",},"order":3,},
     {"id":{"name":"obj_lives","path":"objects/obj_lives/obj_lives.yy",},"order":11,},
@@ -32,6 +33,7 @@
     {"id":{"name":"snd_crash_ship","path":"sounds/snd_crash_ship/snd_crash_ship.yy",},"order":3,},
     {"id":{"name":"obj_faction","path":"objects/obj_faction/obj_faction.yy",},"order":9,},
     {"id":{"name":"encounter_player","path":"scripts/encounter_player/encounter_player.yy",},"order":2,},
+    {"id":{"name":"create_game","path":"scripts/create_game/create_game.yy",},"order":4,},
     {"id":{"name":"obj_asteroid","path":"objects/obj_asteroid/obj_asteroid.yy",},"order":0,},
     {"id":{"name":"obj_paralizer_ship","path":"objects/obj_paralizer_ship/obj_paralizer_ship.yy",},"order":3,},
     {"id":{"name":"spr_asteroid_medium","path":"sprites/spr_asteroid_medium/spr_asteroid_medium.yy",},"order":1,},
@@ -59,6 +61,7 @@
     {"roomId":{"name":"rm_game","path":"rooms/rm_game/rm_game.yy",},},
     {"roomId":{"name":"rm_win","path":"rooms/rm_win/rm_win.yy",},},
     {"roomId":{"name":"rm_gameover","path":"rooms/rm_gameover/rm_gameover.yy",},},
+    {"roomId":{"name":"rm_options","path":"rooms/rm_options/rm_options.yy",},},
   ],
   "Folders": [
     {"folderPath":"folders/Sprites.yy","order":0,"resourceVersion":"1.0","name":"Sprites","tags":[],"resourceType":"GMFolder",},

@@ -20,12 +20,15 @@ if (keyboard_check_pressed(vk_enter)) {
 			break;
 			
 		case rm_win:
-		case rm_gameover:
+ 	 	 case rm_gameover:
 			global.playing = false;
-			game_restart();
+			room_restart();
+			room_goto(rm_start);
 			break;
 	}
 }
+
+if (keyboard_check_pressed(vk_escape) && room != rm_options) room_goto(rm_options);
 
 if (room != rm_game && keyboard_check_pressed(ord("Q"))) {
 	game_end();

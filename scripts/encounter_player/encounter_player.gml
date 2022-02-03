@@ -18,7 +18,7 @@ function encounter_player(observable_distance_to_player, closed_distance_to_play
 		direction = image_angle;
 	
 		if (distance_between_player <= closed_distance_to_player) {
-			speed -= 0.05
+			speed -= 0.01
 		} else   {
 			speed += 0.01
 		}
